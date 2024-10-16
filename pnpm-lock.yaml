@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@react-router/cloudflare':
+        specifier: 0.0.0-nightly-a5f191b5e-20240820
+        version: 0.0.0-nightly-a5f191b5e-20240820(@cloudflare/workers-types@4.20241011.0)(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3)
       '@react-router/node':
         specifier: 7.0.0-pre.1
         version: 7.0.0-pre.1(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3)
@@ -30,6 +33,9 @@ importers:
       '@biomejs/biome':
         specifier: 1.9.3
         version: 1.9.3
+      '@cloudflare/workers-types':
+        specifier: ^4.20241011.0
+        version: 4.20241011.0
       '@react-router/dev':
         specifier: 7.0.0-pre.1
         version: 7.0.0-pre.1(@react-router/serve@7.0.0-pre.1(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3))(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3)(vite@5.4.9)
@@ -260,6 +266,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@cloudflare/workers-types@4.20241011.0':
+    resolution: {integrity: sha512-emwBnuFB/2lS1z6NXAeBqrSL8Xwnr7YpgdLuchOmgu/igqBsLLNPBb4Qmgh3neFWUe9wbzQyx030836YF3c3Xw==}
+
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
     engines: {node: '>=12'}
@@ -447,6 +456,17 @@ packages:
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
+
+  '@react-router/cloudflare@0.0.0-nightly-a5f191b5e-20240820':
+    resolution: {integrity: sha512-Ng2ClLLAx1OZXuRNLXD2B1wIjOM9LoaLlI87uCbKx+yiqQIXJN74b4QUbIn0CJS4tR71yzORsdg4XMD2UZBv4A==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      '@cloudflare/workers-types': ^4.0.0
+      react-router: ^0.0.0-nightly-a5f191b5e-20240820
+      typescript: ^5.1.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@react-router/dev@7.0.0-pre.1':
     resolution: {integrity: sha512-Nlp6YXuC2DSMJ7ZgfT/OBwRGlHvieO27WB+SrlL6ipqbi/Ut23UOQ3pn5+y2SS3h1+N6Y+uIOFlnEg8k9adT1g==}
@@ -1973,6 +1993,8 @@ snapshots:
   '@biomejs/cli-win32-x64@1.9.3':
     optional: true
 
+  '@cloudflare/workers-types@4.20241011.0': {}
+
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
 
@@ -2111,6 +2133,13 @@ snapshots:
 
   '@pkgjs/parseargs@0.11.0':
     optional: true
+
+  '@react-router/cloudflare@0.0.0-nightly-a5f191b5e-20240820(@cloudflare/workers-types@4.20241011.0)(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3)':
+    dependencies:
+      '@cloudflare/workers-types': 4.20241011.0
+      react-router: 7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+    optionalDependencies:
+      typescript: 5.6.3
 
   '@react-router/dev@7.0.0-pre.1(@react-router/serve@7.0.0-pre.1(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3))(react-router@7.0.0-pre.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(typescript@5.6.3)(vite@5.4.9)':
     dependencies:
