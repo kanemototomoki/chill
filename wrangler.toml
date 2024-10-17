@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "chill"
+main = "./server.ts"
+compatibility_flags = ["nodejs_compat_v2"]
+
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2024-09-26"
+workers_dev = true
+
+[assets]
+# https://developers.cloudflare.com/workers/static-assets/binding/
+directory = "./build/client"
+
+[build]
+command = "pnpm run build"

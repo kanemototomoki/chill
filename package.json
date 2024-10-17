@@ -7,7 +7,8 @@
     "build": "react-router build",
     "start": "react-router-serve --port 7777 ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "check": "pnpm biome check --write ./app"
+    "check": "pnpm biome check --write ./app",
+		"deploy": "wrangler deploy"
   },
   "dependencies": {
     "@react-router/cloudflare": "0.0.0-nightly-a5f191b5e-20240820",
@@ -29,7 +30,10 @@
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
     "vite": "^5.4.8",
-    "vite-tsconfig-paths": "^5.0.1"
+    "vite-tsconfig-paths": "^5.0.1",
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
+    "vitest": "2.0.5",
+    "wrangler": "^3.60.3"
   },
   "engines": {
     "node": ">=20.0.0"

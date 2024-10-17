@@ -4,7 +4,7 @@ import * as build from "./build/server";
 export const onRequest = createRequestHandler(build as unknown as ServerBuild);
 
 export default {
-  async fetch(request: Request) {
+  async fetch(request, env, ctx): Promise<Response> {
     return await onRequest(request);
   },
-};
+} satisfies ExportedHandler<Env>;
