@@ -27,6 +27,7 @@
     "@cloudflare/workers-types": "^4.20241011.0",
     "@number-flow/react": "^0.2.1",
     "@react-router/dev": "7.0.0-pre.1",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
