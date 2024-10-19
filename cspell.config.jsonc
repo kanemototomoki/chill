@@ -1,7 +1,21 @@
 {
   "version": "0.2",
   "language": "en",
-  "dictionaries": ["typescript", "node", "html", "css", "npm"],
-  "ignorePaths": ["node_modules/**", "build/**", "*lock.*"],
-  "words": ["clsx", "isbot"]
+  "dictionaries": [
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "npm"
+  ],
+  "ignorePaths": [
+    "node_modules/**",
+    "build/**",
+    "*lock.*"
+  ],
+  "words": [
+    "clsx",
+    "isbot",
+    "tailwindcss"
+  ]
 }
