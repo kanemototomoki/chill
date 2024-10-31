@@ -6,9 +6,11 @@
     "dev": "react-router dev --port 7777",
     "build": "react-router build",
     "start": "react-router-serve --port 7777 ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc",
-    "check": "pnpm biome check --write ./app",
-		"deploy": "wrangler deploy"
+    "type-check": "react-router typegen && tsc",
+    "cspell-check": "cspell ./app -c ./cspell.config.jsonc --no-summary --no-progress",
+    "biome-check": "pnpm biome check --write ./app",
+    "check": "pnpm run cspell-check && pnpm run type-check && pnpm run biome-check",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@react-router/cloudflare": "0.0.0-nightly-a5f191b5e-20240820",
@@ -21,17 +23,22 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.3",
+    "@cloudflare/vitest-pool-workers": "^0.5.2",
     "@cloudflare/workers-types": "^4.20241011.0",
+    "@number-flow/react": "^0.2.1",
     "@react-router/dev": "7.0.0-pre.1",
+    "@tailwindcss/typography": "^0.5.15",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
+    "cspell": "^8.15.4",
     "postcss": "^8.4.47",
+    "tailwind-merge": "^2.5.4",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
     "vite": "^5.4.8",
     "vite-tsconfig-paths": "^5.0.1",
-    "@cloudflare/vitest-pool-workers": "^0.5.2",
     "vitest": "2.0.5",
     "wrangler": "^3.60.3"
   },
