@@ -17,7 +17,10 @@ export default function Index() {
         <ul>
           <li>
             <a href="/number-flow">Number Flow</a>
-          </li>
+					</li>
+					<li>
+						<a href="/static-column-table">Static Column Table</a>
+					</li>
         </ul>
       </nav>
     </div>
